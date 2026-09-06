@@ -1,0 +1,8 @@
+services:
+  boost-bot:
+    build: .
+    container_name: tg-boost-bot
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./data:/app/data
